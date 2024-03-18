@@ -1,0 +1,299 @@
+awall=false;
+user=u.toLowerCase();
+tuser=w.toLowerCase();
+
+if(user=='recawronghouse')
+{
+	u='Reca';
+}
+else if(user=='kodiac_vt')
+{
+	u='Kodi';
+}
+else if(user=='minnieful')
+{
+	check=Math.floor(Math.random()*6);
+	if(check==0 || check==5)
+	{
+		u='Min Min';
+	}
+	else
+	{
+		u='Minnie';
+	}
+}
+
+if(tuser=='reca' || tuser=='recawronghouse')
+{
+	w='Reca';
+}
+else if(tuser=='kodiac_vt' || tuser=='kodi' || tuser=='kodiac')
+{
+	w='Kodi';
+}
+else if(tuser=='minnie' || tuser=='minnieful' || tuser=='minniefull')
+{
+	check=Math.floor(Math.random()*6);
+	if(check==0 || check==5)
+	{
+		w='Min Min';
+	}
+	else
+	{
+		w='Minnie';
+	}
+}
+else if(tuser=='min' || tuser=='minmin')
+{
+	w='Min Min';
+}
+else if (tuser=='privateawall' || tuser=='privateawal' || tuser=='awall' || tuser=='awal' || tuser=='private' || tuser=='paywall' || tuser=='paywal' || tuser=='privatewall' || tuser=='privatewal' || tuser=='palwall' || tuser=='palwal' )
+{
+	awall=true;
+	checkwall=Math.floor(Math.random()*6);
+	if(u=='Reca')
+	{
+		if(checkwall==0 || checkwall==5 || tuser=='private')
+		{
+			w='Private';
+		}
+		else if(tuser=='paywall' || tuser=='paywal')
+		{
+			w='PayWall';
+		}
+		else if(tuser=='awall' || tuser=='awal')
+		{
+			w='AWall';
+		}
+		else if(tuser=='palwall' || tuser=='palwal')
+		{
+			w='PalWall';
+		}
+		else
+		{
+			w='PrivateAWall';
+		}
+	}
+	else if (u=='Kodi')
+	{
+		if(checkwall==0 || checkwall==5 || tuser=='paywall' || tuser=='paywal')
+		{
+			w='PayWall';
+		}
+		else if(tuser=='private')
+		{
+			w='Private';
+		}
+		else if(tuser=='awall' || tuser=='awal')
+		{
+			w='AWall';
+		}
+		else if(tuser=='palwall' || tuser=='palwal')
+		{
+			w='PalWall';
+		}
+		else
+		{
+			w='PrivateAWall';
+		}
+	}
+	else if(u=='Minnie' || u=='Min Min')
+	{
+		if(tuser=='palwall' || tuser=='palwal')
+		{
+			w='PalWall';
+		}
+		else if(checkwall==0 || checkwall==5 || tuser=='awall' || tuser=='awal' || n<=25 || n>=76)
+		{
+			w='AWall';
+		}
+		else if(tuser=='private')
+		{
+			w='Private';
+		}
+		else if(tuser=='paywall' || tuser=='paywal')
+		{
+			w='PayWall';
+		}
+		else
+		{
+			w='PrivateAWall';
+		}
+	}
+	else if(user=='privateawall')
+	{
+		w='Reca';
+	}
+	else
+	{
+		if(tuser=='private')
+		{
+			w='Private';
+		}
+		else if(tuser=='paywall' || tuser=='paywal')
+		{
+			w='PayWall';
+		}
+		else if(tuser=='awall' || tuser=='awal')
+		{
+			w='AWall';
+		}
+		else if(tuser=='palwall' || tuser=='palwal')
+		{
+			w='PalWall';
+		}
+		else
+		{
+			w='PrivateAWall';
+		}
+	}
+}
+else if((u=='Minnie' || u=='Min Min') && (w=='Minnie' || w=='Min Min'))
+{
+	w='Reca';
+}
+else if(u!=='Reca' && w==u)
+{
+	w='Reca';
+}
+
+t=[
+	'Yes you are! We RECAnize you!',
+	'Yeah Reca! You certainly are RECAnoice!',
+	'Of course you are, Reca! Who else?',
+	'Wow, Min Min! You\'re so RECAnoice to everybody! Reca would appreciate it if you stay a while. Don\'t make him suffer Minnie Deficiency again!',
+	'Reca pulls out an UNO reverse card! "No '+w+', YOU\'RE RECAnoice!"',
+	'Reca cries tears of ichor. '+w+'... *sniff* ..."Why Are You So Nice To Me?" (It\'s because you\'re RECAnoice, Reca, you\'re RECAnoice.)',
+	'Reca arms himself with a massive, white, rotary gun! "Say Hello To \'LE COMPLIMENT GUN!\'" He unloads the whole clip into '+w+' lovingly, tearing the wall behind to shreds in the process! When the dust clears, the weapon\'s barrel sizzling red, the bullet-hole laden wall reads out "RECAnoice!" and '+w+' is filled with an overabundance of positivity!',
+	'Reca thinks you\'re cool Kodi! "Active or lurking, you a good boi that deserves to be RECAnized!"',
+	'Kodi rises out from a hellish portal behind RecaWronghouse and whispers in his ear: "RECAnoicccccce!"',
+	'Kodi jumps into the air unsheathing his sword! It gleams a molten red to an illustrious white as runic inscriptions scratch and etch themselves upon the surface of the radiant alloy! With his blade emblazoned in hellish fire, he slashes sizzling beams furiously toward Reca! As the smoke settles, Reca unscathed, the scorched, liquified earth below Reca\'s feet shines boldly. It reads: "RECAnoice"',
+	'Kodi deviously squints his eyes and smirks at Reca. Reca rolls his eyes, his face filled with preemptive regret for what he\'s about to ask. "What Is It Kodi?..." Kodi chuckles a bit. "Heh heh... RECAnoice!"',
+	'Hey Minnie... Have you purchased WinRAR? It\'s RECAnoice! Only $59.99!',
+	'*GULP GULP GULP* Kodi swigs down some Elmer\'s glue straight from the bottle, wipes his mouth, and offers the bottle to Minnie.. "You want some? The flavor is refined. It\'s RECAnoice!"',
+	'"'+w+'..." Kodi hesitates to continue. "I think... I think you\'re RECAnoice. And... and I don\'t just say that to anyone. I RECAnize you."',
+	'Kodi puts his hand on '+w+'\'s shoulder and a dark shadow spreads upon his eyes as he grins mischeviously. "I think... you\'re RECAnoiiiicccce, heeheehee... ACCEPT IT, OR I THROW YOU IN THE SOUL BURNER!!"',
+	'Clouds part as a blinding light shines over Reca\'s eyes. A majestic angel glides forth.. FOR AN EMERGENCY LANDING? "WATCH OUT!" Luckily, he "softens" the impact. ~RECAncussion Trauma: '+c+'%~ "Oh Reca! I didn\'t RECAnize you! Hehe.. PAIN! Anyways, thanks for catching me! So RECAnoice! Get it: RECAnize and RECAnoice? Everyone loves Minnie\'s puns!" she proclaims, standing proudly on his "RECA\'d" ribs!',
+	'"Minnie hopes Reca\'s life is Minnief-- I mean... \'RECAnoice,\' today!"',
+	'Minnie gazes in awe at all of Reca\'s pixel art. "Wow, Reca! Your art is RECAnoice! I think you\'re so heckin\' talented! You deserve \'RECAnition\' for your hard work! Hehe! Get it? RECA-gnition?!"',
+	'Minnie chuckles "Hehehe, Kodi is Win-noice! ...Kodi is RARnoice? ...Kodi is WinRARnoice! ...Whatever! Kodi is WinRAR! HA! ...ahehehehehe"',
+	'"Minnie thinks '+w+' is RECAnoice too!"',
+	'Minnie pats '+w+' on the back. "Did you know, '+w+'? Minnie thinks you\'re RECAnoice! Heckin\' bet!"',
+	u+' RECAnizes that RecaWronghouse is RECAnoice! Reca\'s so "grateful" as he rolls his eyes.',
+	u+' thinks you\'re RECAnoice, Reca! Deal with it! Don\'t deny it!',
+	'I know '+u+'! Reca IS RECAnoice isn\'t he? He needs to accept the compliment!',
+	w+'! You\'re RECAnoice! '+u+' says so! So it must be true!',
+	u+' RECAnizes '+w+'! So cute! You\'re both so RECAnoice!',
+	u+' borrows "LE COMPLIMENT GUN" and fires it in '+w+'\'s direction. It spurs, rattles, and chugs a familiar sound: SingsNote *RE-CA-noice* SingsNote *RE-CA-noice* SingsNote *RE-CA-noice* SingsNote '+w+' can\'t escape the kindness!'
+];
+
+paywall=[
+	'Minnie pokes PrivateAWall. "You know? Minnie sincerely thinks you\'re RECAnoice!" He tries to retort with his signature comeback but.. something\'s wrong! When she poked him before, she cast a holy ward! In his attempt to tell her to stop patronizing him, other words come out instead! ..."Thank you," he mutters... "You\'re welcome AWall!" she replies, snickering, "You deserve a special response too!"'
+];
+
+if (u=='Reca' && w==u)
+{
+	t[Math.floor(Math.random()*3)]
+}
+else if (u=='Reca')
+{
+	if (n<=25 || n>=76)
+	{
+		if (w=='Kodi')
+		{
+			t[Math.floor((Math.random()*4)+4)]
+		}
+		else if (w=='Minnie' || w=='Min Min')
+		{
+			t[Math.floor((Math.random()*4)+3)]
+		}
+		else
+		{
+			t[Math.floor((Math.random()*3)+4)]
+		}
+	}
+	else
+	{
+		t[Math.floor((Math.random()*2)+24)]
+	}
+}
+else if (u=='Kodi' && w=='Reca')
+{
+	if (n<=25 || n>=76)
+	{
+		t[Math.floor((Math.random()*3)+8)]
+	}
+	else
+	{
+		t[Math.floor((Math.random()*6)+21)]
+	}
+}
+else if (u=='Kodi')
+{
+	if (n<=25 || n>=76)
+	{
+		if (w=='Minnie' || w=='Min Min')
+		{
+			t[Math.floor((Math.random()*3)+11)]
+		}
+		else
+		{
+			t[Math.floor((Math.random()*2)+13)]
+		}
+	}
+	else
+	{
+		t[Math.floor((Math.random()*3)+24)]
+	}
+}
+else if ((u=='Minnie' || u=='Min Min') && w=='Reca')
+{
+	if (n<=25 || n>=76)
+	{
+		t[Math.floor((Math.random()*3)+15)]
+	}
+	else
+	{
+		t[Math.floor((Math.random()*6)+21)]
+	}
+}
+else if (u=='Minnie' || u=='Min Min')
+{
+	if (n<=25 || n>=76)
+	{
+		if (w=='Kodi')
+		{
+			t[Math.floor((Math.random()*3)+18)]
+		}
+		else if (awall)
+		{
+			if (n<=8 || n>=92)
+			{
+				paywall
+			}
+			else
+			{
+				t[Math.floor((Math.random()*2)+19)]
+			}
+		}
+		else
+		{
+			t[Math.floor((Math.random()*2)+19)]
+		}
+	}
+	else
+	{
+		t[Math.floor((Math.random()*3)+24)]
+	}
+}
+else
+{
+	if (w=='Reca')
+	{
+		t[Math.floor((Math.random()*6)+21)]
+	}
+	else
+	{
+		t[Math.floor((Math.random()*3)+24)]
+	}
+}
