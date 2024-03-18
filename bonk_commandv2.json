@@ -1,0 +1,73 @@
+user=u.toLowerCase();
+tuser=w.toLowerCase();
+choose=Math.floor(Math.random()*5);
+bunnybash=Math.floor(Math.random()*6);
+rng=Math.floor(Math.random()*999 + 2);
+
+if (user=='sweet_tarte_' && Math.floor(Math.random()*3)<2)
+{
+	u = 'Icy';
+}
+
+if (user==tuser)
+{
+	w='Nightbot';
+}
+else if (tuser=='madrucksack' || tuser=='madruck' || tuser=='ruck' || tuser=='maddy')
+{
+	if (user=='sweet_tarte_' && Math.floor(Math.random()*3)<2)
+	{
+		w = 'Muk';
+	}
+}
+else if (tuser=='sweet_tarte_')
+{
+	w = 'Icy';
+}
+else if (tuser=='recawronghouse' || tuser=='reca')
+{
+	w = 'Reca';
+}
+
+bonk=[
+	u+' swings their hammer at '+w+' but '+w+' kicks it out of their hand as it lands on top of '+u+'\'s head 💥 BOP',
+	u+' throws a club at '+w+'\'s head! Oonga Boonga! 🐒',
+	w+' gets bonked by '+u+' from behind! x2 Damage Sneak Atack! 🥋',
+	u+' bonks '+w+'! OUCH 😮',
+	u+' tries to pick up a hammer to bonk '+w+', but the handle snaps as they knock themself out! oof 😵'
+];
+
+ooze=[
+	u+' tries to bonk Reca but it bounces off his oozey figure back at \'em! oop 😶',
+	u+' bonks Reca into an ooze puddle... 💦',
+	u+' wacks Reca\'s ooze from out of his body! ewww 😧',
+	u+' tries to bonk Reca, but it gets unexplainably reflected back at everyone else in chat! Wuh... huh??? 😲',
+	'Reca turns to a ooze pile as '+u+' repeatedly bonks him... Um... Is... Is this having any effect?'
+];
+
+sledgehammer=[
+	u+' takes out her "Sledgehammer of Mega Doom" to decimate AWall into lone pebbles! RUN AWALL RUN!!!!! OOH! AHH! OOP! 😈',
+	u+' smirks devilishly at AWall... and produces her MEGA SLEDGEHAMMER!!! It\'s too late! AWall\'s bricks go tumbling down after the horrible massacre!! 🧱 💥 🧱',
+	'AWall sweats nervously as '+u+' slowly walks toward him swinging her hammer back and forth in her hands! She swings her hammer at AWall\'s head but stops abrubtly before the hit! "That\'s a warning AWall! I\'m watching you!!" ✌️',
+	u+' throws her hammer at AWall and... gets a DIRECT HIT to his blockhead face! OOOHHH! He probably deserved it anyways! 😆',
+	u+' throws her hammer at AWall and... misses him by an inch! But, no matter! AWall\'s bricks fall loose and topple from the stress alone... 😂'
+];
+
+bunnybarrage = u+' takes out her "Sledgehammer of Mega Doom" to bonk '+w+' '+rng+' times! Look at those bruises!! 😨';
+
+if (user=='sweet_tarte_' && w.toLowerCase()=='privateawall')
+{
+	sledgehammer[choose]
+}
+else if (w=='Reca')
+{
+	ooze[choose]
+}
+else if (user=='sweet_tarte_' && bunnybash==5)
+{
+	bunnybarrage
+}
+else
+{
+	bonk[choose]
+}
