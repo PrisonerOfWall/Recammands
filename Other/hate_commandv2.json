@@ -1,0 +1,55 @@
+user=u.toLowerCase();
+choose=Math.floor(Math.random()*10);
+
+h=[
+	"I KNOW MINNIE HATES ME NOW, BUT I CANNOT HATE MINNIE, SO THANKS RAMOS BUT ILL DECLINE",
+	"Minnie ignorin me. lying to me. hating me. shoving her cuteness and new haircut in my face. making me feel bad. stabbing my front toe.",
+	"Minnie double hates me. Maybe even triple hates me. maybe even penta hates me",
+	"@Minnieful I stared at you as you ran towards me, knife in hand.. My eyes pleaded with you not to do it. I tried to silently persuade you that violence isn't the answer. Maybe, Just standing still, showing no fear in my friend, would help her come to her senses. But no. She killed me anyways. No regret. No hesitation. Minnie is gone. My friend is gone. And she hates me."
+];
+
+if (3 > choose)
+{
+	Hate = h[0];
+}
+else if (6 > choose)
+{
+	Hate = h[1];
+}
+else if (9 > choose)
+{
+	Hate = h[2];
+}
+else
+{
+	Hate = h[3];
+}
+
+if (user=='angowo' && 7 > choose)
+{
+	Hate = h[1];
+}
+else if (user=='angowo' && 8 > choose)
+{
+	Hate = h[0];
+}
+else if (user=='angowo' && 9 > choose)
+{
+	Hate = h[2];
+}
+else if (user=='angowo')
+{
+	Hate = h[3];
+}
+
+if (user=='recawronghouse')
+{
+	Hate = h[0];
+}
+
+if (user=='kodiac_vt')
+{
+	Hate = h[2];
+}
+
+Hate
