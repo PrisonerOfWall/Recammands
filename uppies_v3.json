@@ -1,0 +1,25 @@
+user=u.toLowerCase();
+tuser=w.toLowerCase();
+
+if (user=="scariiiie")
+{
+	u="SCaRiiiiE";
+}
+
+if(tuser=="scariiiie" || tuser=="scariiie" || tuser=="scariie" || tuser=="scarie")
+{
+	w="SCaRiiiiE";
+}
+
+if(u=="SCaRiiiiE" && w==u)
+{
+	'SCaRiiiiE gives.. himself uppies?! ..HUH?! ..BUT HOW?! Uh.. Well check him out at https://www.twitch.tv/SCaRiiiiE and give him uppies there too!  A total of '+n+' uppies have been sacrificed on Reca\'s channel to appease SCaRiiiiE\'s insatiable hunger for them! He was last playing '+g+'! Wow, giving himself uppies.. That\'s creepy.. Or, you could say it\'s.. SCARY!!'
+}
+else if(w=="SCaRiiiiE" || tuser==user)
+{
+	u+' gives SCaRiiiiE uppies! Check him out at https://www.twitch.tv/SCaRiiiiE and give him loads of uppies there too!  A total of '+n+' uppies have been sacrificed on Reca\'s channel to appease SCaRiiiiE\'s insatiable hunger for them! He was last playing '+g+'!'
+}
+else
+{
+	u+' gives '+w+' uppies!'
+}
