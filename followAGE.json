@@ -1,0 +1,31 @@
+a=" IT'S BEEN AGES!";
+unit=[" seconds! "," minutes! "," nanoseconds! "," decades! "," lifetimes! "," years! "," centuries! "," lunar years! "," semesters! "," fortnights! "," trimesters! "," eons! "," months! "," gigaseconds! "," jiffies! "," shakes! "," zettaseconds! "];
+one=[" second! "," minute! "," nanosecond! "," decade! "," lifetime! "," year! "," century! "," lunar year! "," semester! "," fortnight! "," trimester! "," eon! "," month! "," gigasecond! "," jiffy! "," shake! "," zettasecond! "];
+u=Math.floor(Math.random()*17);
+s=Math.floor(Math.random()*5000);
+l=Math.floor(Math.random()*8000000000);
+check=Math.floor(Math.random()*100);
+
+if(check<80)
+{
+	if(s==1)
+	{
+		t+" has been following RecaWronghouse for "+s+one[u]+a
+	}
+	else
+	{
+		t+" has been following RecaWronghouse for "+s+unit[u]+a
+	}
+}
+
+else
+{
+	if(l==1)
+	{
+		t+" has been following RecaWronghouse for "+l+one[u]+a
+	}
+	else
+	{
+		t+" has been following RecaWronghouse for "+l+unit[u]+a
+	}
+}
